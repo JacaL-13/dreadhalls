@@ -11,6 +11,8 @@ public class DontDestroy : MonoBehaviour {
 	// get an additional set of sounds with every scene reload, layering on the music
 	// track indefinitely
 	void Awake() {
+		
+		
 		if (instance == null) {
 			instance = this;
 			DontDestroyOnLoad(gameObject);
